@@ -5,11 +5,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.pkart.R
+import com.example.pkart.activity.FeedBackActivity
+import com.example.pkart.activity.HelpDeskActivity
 import com.example.pkart.activity.ProductDetailsActivity
 import com.example.pkart.adapter.CategoryAdapter
 import com.example.pkart.adapter.ProductAdapter
@@ -41,7 +44,6 @@ class HomeFragment : Fragment() {
 
         if (preference.getBoolean("isCart",false))
             findNavController().navigate(R.id.action_homeFragment_to_cartFragment)
-
 
         getCategories()
 
@@ -84,6 +86,7 @@ class HomeFragment : Fragment() {
                 binding.categoryRecycler.adapter = CategoryAdapter(requireContext(), list)
             }
     }
+
 
 
 }
