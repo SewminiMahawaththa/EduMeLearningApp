@@ -12,6 +12,15 @@
         android:theme="@style/Theme.PKart"
         tools:targetApi="31">
         <activity
+            android:name=".activity.FeedbackDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FeedbackFetchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FeedbackInsertionActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.HelpDeskDetailsActivity"
             android:exported="false" />
         <activity

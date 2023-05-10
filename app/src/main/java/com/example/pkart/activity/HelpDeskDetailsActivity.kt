@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.pkart.R
 import com.example.pkart.model.HelpModel
-import com.example.pkart.model.NoteModel
 import com.google.firebase.database.FirebaseDatabase
 
 class HelpDeskDetailsActivity : AppCompatActivity() {
